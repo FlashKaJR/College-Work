@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>More Form Examples</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<style>
+				html{ background-color: rgb(255,255,204);}
+		</style>
+		<script>
+			function $(id){
+				return document.getElementById(id);
+			}	
+			function NumberEvaluator(){
+				var evenCounter = 0;	var oddCounter=0;
+				var evenResult = " "; 		var oddResult=" ";
+				var evenSum = 0;			var oddSum = 0;
+				var start = parseInt(prompt("Enter Start Position"));
+				var end = parseInt(prompt("Enter End Position"));
+
+				if(isNaN(start)||isNaN(end))
+					document.write("<h1>Something went wrong</h1><hr><p>Please refresh and enter numerical values</p>");
+				else{
+					for(var i=start; i<=end; i++){
+						if(i%2==0){
+							evenCounter++;
+							evenResult+=i+" ";
+							evenSum=i
+						}
+						else{
+							oddCounter++;
+							oddResult+=i+" ";
+						}
+					}
+					var htmlOut = "<h1>Number Evaluator</h1><hr/>";
+					htmlOut += "<h>Start Position: "+start+"<br/>End Position: "+end+"</h2><hr>";
+					htmlOut += "<h3>Even numbers between range: "+evenCounter+"</h3>";
+					htmlOut += "<p><u>Values Include:</u><br/>"+evenResult+"</p>";
+					htmlOut += "<p>Sum = "+evenSum+"</p><hr/>";
+					htmlOut += "<h3>Odd numbers between range: "+oddCounter+"</h3>";
+					htmlOut += "<p><u>Values Include:</u><br/>"+oddResult+"</p><hr/>";
+					htmlOut +="<p>Refresh your page and try again</p>";
+					$("theBody").innerHTML = htmlOut;
+					console.log(htmlOut)
+					// document.write("Even numbers: "+evenResult);
+					// document.write("<hr>odd numbers: "+oddResult);
+
+				}
+			}
+		</script>
+	</head>
+	<body id="theBody" onload="NumberEvaluator()">
+	</body>
+</html>

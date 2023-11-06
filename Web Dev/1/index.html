@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="css/w3.css"> 
+		<script type="text/javascript" src="jScripts/Calculator.js"></script>
+	</head>
+	<body class="w3-margin w3-white">
+		<h1 class="w3-row w3-orange w3-center">Calculator</h1>
+		<div class="w3-row">
+			<div class="w3-half w3-container">
+				<td>
+					<select id="selbox" name="measure">
+						<option value="a1" id="area">Area</option>
+						<option value="v1" id="volume">Volume</option>
+					</select>
+				</td>
+				<br>
+				<input type="radio" name="shape" id="cylinder"checked="checked" onclick="field(1);" /> Cylinder
+				<input type="radio" name="shape" id="cuboid" onclick="field(2);" />Cuboid
+				<input type="radio" name="shape" id="sphere" onclick="field(3);" />Sphere
+				
+
+				<table class="w3-table" >
+					<tr>
+						<td>Length (cm)</td>
+						<td><input type="text" id="length" disabled="disabled" /></td>
+					</tr>
+					<tr>
+						<td>Width (cm)</td>
+						<td><input type="text" id="width" disabled="disabled"/></td>
+					</tr>
+					<tr>
+						<td>Height (cm)</td>
+						<td><input type="text" id="height"/></td>
+					</tr>
+					<tr>
+						<td>Radius (cm)</td>
+						<td><input type="text" id="radius" /></td>
+					</tr>
+					<tr>
+						<td>Result (cm<sup>3</sup>)</td>
+						<td><input type="text" id="resultText" disabled="true"  /></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="reset" value="Reset"/></td>
+						<td><input type="button" id="calculate" value="Calculate"/></td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-half" style="display: flex; justify-content: center; padding-top: 50px;">
+				<img src="images/cylinder.jpg" id="imgs">
+			</div>
+		  </div>
+		<footer  class="w3-row w3-orange w3-center">
+			<h3 id="resultPara">
+				Your results will appear here.
+			</h3>
+		</footer>
+	</body>
+</html>

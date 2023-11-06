@@ -1,0 +1,33 @@
+html{background-color: rgb(255,255,204);}
+body{
+	background-image: url();
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: 'Comic Sans MS';
+}
+section{ 
+	background-color: blue;
+	color: white;
+	overflow: auto;
+	float:left;
+	clear: none;
+	width:75%
+}
+aside{
+	float:right;
+	background-color:white;
+	clear: none;
+	width:25%
+}
+header{
+	background-color: olive;
+	margin:0px;
+	padding:20px;
+}
+footer{
+	background-color:orange;
+	clear:both;
+}
+main{background-color:pink}

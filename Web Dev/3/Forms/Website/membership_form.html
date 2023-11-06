@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>W3CSS Template</title>
+		<link rel="stylesheet" href="css/w3.css"/>
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+	</head>
+	<body>
+		<div>
+		<img src="TUS_Logo.png" alt="" style="width: 100%;"/>
+		</div>		
+		<div class="w3-container w3-black">
+			<h3>Web App Development Registration</h3>
+		</div>
+		<form method="post" action="mailto:jbloggs@tus.ie?subject=Website Info" enctype="text/plain">
+		<fieldset>
+			<legend>Personal Details</legend>
+			<table>
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" name="firstname"/></td>
+				</tr>
+				<tr>
+					<td>Surname</td>
+					<td><input type="text" name="secondname"/></td>
+				</tr>
+				<tr>
+					<td>Address1</td>
+					<td><input type="text" name="addrs1"/></td>
+				</tr>
+				<tr>
+					<td>Address2</td>
+					<td><input type="text" name="addrs2"/></td>
+				</tr>
+				<tr>
+					<td>Town</td>
+					<td><input type="text" name="twn"/></td>
+				</tr>
+				<tr>
+					<td>County</td>
+					<td><input type="text" name="cnty"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="sex" value="male"/>Male</td>
+					<td><input type="radio" name="sex" value="female"/>Female</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="sex" value="Pnts"/>Prefer not to say</td>
+				</tr>
+				<tr>
+					<td>Date of birth</td>
+					<td><input type="text" name="dob"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>		
+			<legend>Login Details</legend>
+			<table>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" name="pwd"/></td>
+				</tr>
+				<tr>
+					<td>User Name</td>
+					<td><input type="text" name="Uname"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>		
+			<legend>Course Details</legend>
+			<table>
+				<tr>
+					<td><input type="radio" name="enrl" value="gd"/>Enrolled in Game Dev</td>
+					<td><input type="radio" name="enrl" value="cd"/>Enrolled in Cloud Dev</td>
+				</tr>
+				<tr>
+					<td>Year</td>
+					<td>
+						<select name="yr">
+							<option value="yr1">Year 1</option>
+							<option value="yr1">Year 2</option>
+							<option value="yr1">Year 3</option>
+							<option value="yr1">Year 4</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</fieldset>	
+		<fieldset>		
+			<legend>Mailing Lists</legend>
+			<table>
+				<tr>
+					<td><input type="checkbox" name="mail" value="add"/>I want to be added to the mailing list</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ofr" value="accept"/>I want to be notified about any special offers</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>		
+			<legend>Comments</legend>
+			<table>
+				<tr>
+					<td colspan="2"><input type="text" name="comment" value="Enter any comment" size="40"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>		
+			<legend>Submit information</legend>
+			<table>
+				<tr>
+					<td><input type="submit" value="Send"/></td>
+					<td><input type="reset" value="Reset"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		</form>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer"><img
+			  src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+		  </p>
+	</body>
+</html>

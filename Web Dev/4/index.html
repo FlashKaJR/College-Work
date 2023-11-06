@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>JavaScript Lab 1</title>
+		<link rel="stylesheet" href="css/w3.css">
+		<script type="text/javascript" src="jScripts/myScript.js"></script>
+		<style>
+			html{background-color: rgb(255, 255, 204);}
+		</style>
+	</head>
+	<body onload="myScripts:UpdateData()">
+		<header class="w3-row w3-center w3-black">
+			<h1 id="title">All about you</h1>
+		</header>
+		<main>
+			<div class="w3-row w3-margin">
+				<div class="w3-half w3-container">
+					<div class="w3-card-4">
+						<table class="w3-table w3-bordered">
+							<tr>
+								<td>Name</td>
+								<td id="name">Your name will apear here</td>
+							</tr>
+							<tr>
+								<td>age</td>
+								<td id="age">Your age will apear here</td>
+							</tr>
+							<tr>
+								<td>height</td>
+								<td id="height">Your height will apear here</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="w3-half w3-container w3-center">
+					<img src="images/js-logo.png" style="height: 125px;">
+				</div>
+			</div>
+
+		</main>
+		<footer class="w3-row w3-black w3-display-bottommiddle" style="width: 100%; text-align: center;">
+			<h1>Copyright &copy;
+				<script>
+					var today = new Date();
+					document.writeln(today.getFullYear());
+				</script>
+			</h1>
+		</footer>
+	</body>
+</html>
